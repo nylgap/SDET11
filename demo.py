@@ -70,4 +70,3 @@ print(basket.difference(basket2))
 # {'a'}
 
 # （2）元组
-掩饰
