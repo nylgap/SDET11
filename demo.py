@@ -35,4 +35,38 @@ list = [x*10 for x in range(10)]
 print(list)
 # [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
 
- DD
+
+# 集合，sets，无排序
+# 元组，tuples，不可修改
+# 列表，list，可修改
+# 词典，dict，关系数据
+
+# （1）集合
+# 并集、交集
+basket = {'apple','orange','apple','pear','orange','banana'}
+print(basket)
+# {'apple', 'pear', 'banana', 'orange'}
+
+basket.add('a')
+print(basket)
+# {'a', 'pear', 'apple', 'orange', 'banana'}
+
+basket.add('a')
+print(basket)
+# {'a', 'pear', 'apple', 'orange', 'banana'}
+
+basket2 = {'apple','orange','apple','pear','orange','banana','b'}
+print(basket2)
+# {'orange', 'apple', 'b', 'banana', 'pear'}
+
+print(basket.union(basket2))
+# 并集
+# {'a', 'b', 'pear', 'apple', 'orange', 'banana'}
+print(basket.intersection(basket2))
+# 交集
+# {'pear', 'banana', 'orange', 'apple'}
+print(basket.difference(basket2))
+# 不同
+# {'a'}
+
+# （2）元组
